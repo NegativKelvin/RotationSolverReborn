@@ -164,8 +164,8 @@ public readonly struct ActionBasicInfo
             var isUnlockQuestComplete = QuestManager.IsQuestComplete(_action.Setting.UnlockedByQuestID);
             if (!isUnlockQuestComplete)
             {
-                var warning = $"The action {Name} is locked by the quest {_action.Setting.UnlockedByQuestID}. Please complete this quest to learn this action.";
-                WarningHelper.AddSystemWarning(warning);
+                //var warning = $"The action {Name} is locked by the quest {_action.Setting.UnlockedByQuestID}. Please complete this quest to learn this action.";
+                //WarningHelper.AddSystemWarning(warning);
                 return false;
             }
         }
